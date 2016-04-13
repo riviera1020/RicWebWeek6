@@ -14,7 +14,7 @@ class ChatApp extends Component {
     var m3 = [this.MsgGen("Hi"), this.MsgGen("欸我姆斯拉")];
 
     this.state = {
-      userName: ["米開朗基羅", "野豬騎士", "詹姆斯"],
+      userName: ["米開朗基羅", "野豬騎士", "LeBron James"],
       userImg: ["https://imgur.com/jINxrKy.jpg",
         "http://i3.shouyou.itc.cn/v3/coc/2014/04/14/0414095945903197761.png",
         "https://imgur.com/goFCHGA.jpg"
@@ -85,7 +85,7 @@ class ChatApp extends Component {
       <div className="chat-app clearfix">
         <div className="chat-app_left">
           <div className="heading">
-            <h3 className="messenger-title">Messager</h3>
+            <h3 className="messenger-title">Messenger</h3>
           </div>
           <div className="thread-list">
             {index.map(function(i) {
