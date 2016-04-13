@@ -17,7 +17,7 @@ module.exports = {
     }, {
       test: /\.css$/, // 針對 css 檔
       loaders: ['style', 'css'],
-      include: path.join(__dirname, 'src'),
+      //include: path.join(__dirname, 'src'),
       exclude: /node_modules/ // 不要處理 3rd party 的 code
     }]
   }
