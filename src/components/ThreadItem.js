@@ -3,7 +3,7 @@ import React, {
 }
 from 'react';
 
-class ThreadItem extends React.Component {
+class ThreadItem extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);

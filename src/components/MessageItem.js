@@ -3,7 +3,7 @@ import React, {
 }
 from 'react';
 
-class MessageItem extends React.Component {
+class MessageItem extends Component {
   render() {
     const mesgList = this.props.mesgList;
     var count = 0;

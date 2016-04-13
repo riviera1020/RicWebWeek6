@@ -5,7 +5,7 @@ from 'react';
 import ThreadItem from './ThreadItem';
 import MessageItem from './MessageItem';
 
-class ChatApp extends React.Component {
+class ChatApp extends Component {
   constructor(props) {
     super(props);
 
@@ -114,4 +114,3 @@ class ChatApp extends React.Component {
 }
 
 export default ChatApp;
-ReactDOM.render(<ChatApp index={[0, 1, 2]}/>, document.getElementById('root'));
