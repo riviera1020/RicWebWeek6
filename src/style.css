@@ -48,7 +48,7 @@ a:hover {
 
 .thread-item {
 	position: relative;
-	heidht: 70px;
+	height: 70px;
 }
 
 .thread-item_left {
@@ -169,15 +169,16 @@ a:hover {
 @media screen and (max-width: 600px) {
 	.chat-app_left {
 		box-sizing: border-box;
-		border-bottom: 1px solid grey;
+		border-bottom: 1px solid rgba(0, 0, 0, .10);
 		width: 100%;
-		height: 50%;
+		height: 30%;
 		overflow-y: auto;
 	}
 	.chat-app_right{
 		box-sizing: border-box;
 		width: 100%;
-		height: 50%;
+		height: 70%;
+		overflow-y: auto;
 	}
 
 }
