@@ -166,7 +166,7 @@ a:hover {
   zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.chat-app_left {
 		box-sizing: border-box;
 		width: 100%;
