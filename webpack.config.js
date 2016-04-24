@@ -20,5 +20,9 @@ module.exports = {
       //include: path.join(__dirname, 'src'),
       exclude: /node_modules/ // 不要處理 3rd party 的 code
     }]
-  }
+  },
+  plugins: [ // 要加這些 plugin
+    new webpack.HotModuleReplacementPlugin(), // => 啟用 HMR
+    new webpack.NoErrorsPlugin() // => 不要把錯誤的 Code 打包進來
+  ]
 };
