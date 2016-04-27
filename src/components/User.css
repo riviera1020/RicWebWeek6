@@ -1,0 +1,24 @@
+.container-fluid {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.daily-img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+}
+
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-4 { 
+    background: #2d2d30;
+    color: #bdbdbd;
+}

@@ -1,7 +1,11 @@
 import React, {
-  Component, PropTypes
+  Component,
+  PropTypes
 }
 from 'react';
+import {
+  Link
+} from 'react-router';
 import ThreadItem from './ThreadItem';
 import MessageItem from './MessageItem';
 
@@ -21,12 +25,17 @@ class ChatApp extends Component {
       ],
       lastTime: ["上午00:00", "上午00:00", "上午00:00"],
       mesgArr: [m1, m2, m3],
+      index: [0, 1, 2],
       targetIndex: 0
     };
 
     this.handleClickThread = this.handleClickThread.bind(this);
     this.handleMesgInput = this.handleMesgInput.bind(this);
   }
+
+  static contextTypes = {
+    router: PropTypes.object.isRequired
+  };
 
   MsgGen(text) {
     var obj = {
@@ -75,9 +84,13 @@ class ChatApp extends Component {
 
   render() {
     console.log(this.state.mesgArr);
-    const index = this.props.index;
+    const index = this.state.index;
     const {
-      userName, userImg, lastTime, mesgArr, targetIndex
+      userName,
+      userImg,
+      lastTime,
+      mesgArr,
+      targetIndex
     } = this.state;
     let handleClickThread = this.handleClickThread;
 

@@ -1,7 +1,11 @@
 import React, {
-  Component, PropTypes
+  Component,
+  PropTypes
 }
 from 'react';
+import {
+  Link
+} from 'react-router';
 
 class ThreadItem extends Component {
   constructor(props) {
@@ -14,11 +18,14 @@ class ThreadItem extends Component {
   }
   render() {
     // html -> jsx
+    const userPath = '/users/' + this.props.name;
     return (
       <li onClick={this.handleClick} className="thread-item">
         <div className="clearfix">
           <div className="thread-item_left">
-            <img className="img-circle" src={this.props.userImg} width="50" height="50" alt="" class="img"/>
+            <Link to={userPath}>
+              <img className="img-circle" src={this.props.userImg} width="50" height="50" alt="" class="img"/>
+            </Link>
           </div>
 					<div className="thread-item_right">
               <div className="thread-from">{this.props.name}</div>
